@@ -150,3 +150,17 @@ body {
     transform: rotate(360deg);
   }
 }
+
+/* load more */
+
+.load-more {
+  display: none;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.load-more.visible {
+  display: block;
+}

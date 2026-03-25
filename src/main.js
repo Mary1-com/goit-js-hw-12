@@ -57,6 +57,9 @@ form.addEventListener('submit', async e => {
             showLoadMoreButton();
         } else {
             hideLoadMoreButton();
+            iziToast.info({
+                message: "We're sorry, but you've reached the end of search results.",
+            });
         }  
         
     } catch (error) {
@@ -74,6 +77,7 @@ loadMoreBtn.addEventListener('click', async () => {
 
     try {
         showLoader();
+        hideLoadMoreButton();
 
         const data = await getImagesByQuery(query, page);
 

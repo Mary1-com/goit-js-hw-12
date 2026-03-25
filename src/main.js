@@ -92,7 +92,7 @@ loadMoreBtn.addEventListener('click', async () => {
                 message: "We're sorry, but you've reached the end of search results.",
             });
         } else {
-            showLoadMoreButton(); // 👈 ОЦЕ ТИ ЗАБУВ
+            showLoadMoreButton(); 
         }
 
         // скрол
